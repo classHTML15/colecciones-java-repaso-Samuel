@@ -23,4 +23,17 @@ public class Alumno {
         return "Alumno{dni='" + dni + "', nombre='" + nombre + "'}";
     }
 
+    @Override
+    public boolean equals(Object obj) {
+        if (obj == this) return true;
+        if (obj == null || obj.getClass() != this.getClass()) return false;
+        Alumno nombre = (Alumno) obj;
+        return dni.equals(nombre.dni);
+    }
+
+    @Override
+    public int hashCode() {
+        return dni.hashCode();
+    }
+
 }

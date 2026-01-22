@@ -1,6 +1,7 @@
 package es.fplumara.dam1.actividades.inventario;
 
 import java.util.List;
+import java.util.Map;
 
 public class Main {
     public static void main(String[] args) {
@@ -52,5 +53,10 @@ public class Main {
 
         Actividad actividad = new Actividad();
         actividad.procesarMovimientos(movimientos);
+
+        /*System.out.println("INVENTARIO FINAL");
+        for (Map.Entry<String, Integer> entry : productosInventario.entrySet()) {
+            System.out.println(entry.getKey() + " - " + entry.getValue());
+        }*/
     }
 }
